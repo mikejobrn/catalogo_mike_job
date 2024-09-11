@@ -1,0 +1,82 @@
+.home-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #0e1a2b;
+    color: #ffffff;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 1900px;
+    height: 600px;
+    margin-top: -20px;
+    margin-left: 212px;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.5em;
+}
+
+/* Featured Game */
+.featured-game {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 270px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1b2a3a;
+    width: 80%;
+}
+
+.main-game-image {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.main-game-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.other-game-images {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.other-game-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.other-game-images img:last-child {
+    margin-bottom: 0;
+}
+
+.featured-game .game-details {
+    background-color: #1b2a3a; 
+    padding: 10px;
+    border-radius: 10px;
+}

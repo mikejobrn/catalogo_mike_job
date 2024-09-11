@@ -1,0 +1,102 @@
+/* Define o background da página inteira */
+body {
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  height: 100vh; /* Define a altura do body para ocupar toda a altura da janela de visualização */
+  background-color: #1b2939; /* Aplica a imagem de fundo */
+  background-size: cover; /* Faz com que a imagem cubra toda a área da página */
+  font-family: Arial, sans-serif; /* Define uma fonte padrão */
+  color: #fff; /* Define uma cor de texto padrão para contraste */
+}
+
+/* Container para os cards */
+.card-container {
+  display: flex; /* Define como flexível */
+  flex-wrap: wrap; /* Permite que os cards quebrem a linha se necessário */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px; /* Adiciona padding ao container para criar espaço ao redor dos cards */
+}
+
+/* Estilo geral dos cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #023b5e, #09769b);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px;
+  cursor: pointer;
+  max-width: 300px;
+  background-color: #023b5e; /* Fallback color para maior contraste */
+}
+
+.card .image-container {
+  width: 100%;  
+  height: 100%; /* Altura fixa para o container da imagem */
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover; /* Preenche o container e corta a imagem se necessário */
+  display: block;
+}
+
+/* Defina as classes para avaliação */
+.avaliacao.alta {
+  color: #18ff1f; /* Verde */
+}
+
+.avaliacao.media {
+  color: #ffea2d; /* Amarelo */
+}
+
+.avaliacao.baixa {
+  color: #ff1d1d; /* Vermelho */
+}
+
+.container {
+  padding: 10px;
+  text-align: left;
+  color: #fff;
+}
+
+/* Estilização dos elementos de texto */
+.container h5 {
+  font-size: 1.1em; /* Ajuste do tamanho da fonte */
+  color: #e0e0e0; /* Cor de fonte levemente mais clara */
+  margin: 5px 0; /* Margem para espaçamento */
+}
+
+.container h3 {
+  font-size: 1.3em; /* Tamanho da fonte ajustado */
+  color: #ffffff; /* Texto principal em branco */
+  margin: 5px 0; /* Espaçamento reduzido para acomodar a área menor */
+  font-weight: bold; /* Negrito para destaque */
+}
+
+.container p {
+  color: #d0d0d0; /* Texto de cor cinza claro para subtítulo */
+  font-size: 0.9em; /* Tamanho da fonte menor */
+  margin: 5px 0; /* Margem para espaçamento */
+}
+
+/* Efeito de hover para o card */
+.card:hover {
+  transform: scale(1.10); /* Efeito de zoom suave no hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
+}
+
+/* Estilos específicos para o componente React */
+.desenvolvedor,
+.titulo,
+.descricao {
+  margin-bottom: 5px; /* Margens reduzidas para acomodar a área menor */
+}
+
+.descricao {
+  margin-bottom: 0; /* Remove margem inferior da descrição */
+}

@@ -1,0 +1,118 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #181c24; 
+    color: #C5C3C0; 
+    font-family: Arial, sans-serif; 
+    font-size: 18px; 
+  }
+  
+  .header .logo {
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 2em; 
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none; 
+  }
+  
+  nav ul li button {
+    background: none;
+    border: none;
+    color: #C5C3C0; 
+    cursor: pointer;
+    font-size: 1.2em; 
+    font-family: Arial, sans-serif;
+    padding-bottom: 5px; 
+    position: relative;
+  }
+  
+  nav ul li button:hover,
+  nav ul li button.active { 
+    color: #ffffff; 
+    border-bottom: 2px solid #66C0F4;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .login-btn {
+    background-color: #66C0F4; 
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em; 
+    border-radius: 5px;
+  }
+  
+  .login-btn:hover {
+    background-color: #66C0F4;
+    opacity: 0.8;
+  }
+  
+  .search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+  }
+  
+  .search button {
+    background: none;
+    border: none;
+    color: #C5C3C0;
+    cursor: pointer;
+    font-size: 1.1em; 
+  }
+  
+  .search button:hover {
+    color: #ffffff;
+  }
+
+
+
+  .sidebar {
+
+    width: 230px; 
+    height: 100%;
+    background-color: #1a1d23;
+    padding: 10px;
+    position: absolute; 
+    top: 79px; 
+    left: 0px; 
+    color: #C5C3C0;
+  }
+
+  .sidebar-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+
+  .sidebar-section button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #282c34;
+    color: #C5C3C0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  .sidebar-section button:hover {
+    background-color: #3a3f47;
+    color: #ffffff;
+  }
