@@ -12,7 +12,7 @@ export default function Navbar(){
     };
 
     return <nav>
-            <div className="catalogo-container">
+            {/* <div className="catalogo-container">
                 <div className="sidebar">
                         <div className="sidebar-section">
                             <h3>Categorias</h3>
@@ -32,7 +32,7 @@ export default function Navbar(){
                             <button>Survival</button>
                         </div>
                 </div>
-            </div>
+            </div> */}
             <div className="main-content"></div>
         <div className="header">
                 <div className="logo">
@@ -77,6 +77,16 @@ export default function Navbar(){
                                     onClick={() => handleTabClick('Contato')}
                                 >
                                     Contato
+                                </button>
+                            </Link>   
+                        </li>
+                        <li>
+                            <Link to ="categorias">
+                                <button
+                                    className={activeTab === 'Categorias' ? 'active' : ''}
+                                    onClick={() => handleTabClick('Categorias')}
+                                >
+                                    Categorias
                                 </button>
                             </Link>   
                         </li>

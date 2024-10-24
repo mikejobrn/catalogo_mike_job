@@ -6,6 +6,7 @@ import NotFound from './Notfound/Notfound';
 import Home from './Home/Home';
 import Noticias from './Noticias/Noticias';
 import Contato from './Contato/Contato';
+import Categorias from './Categorias/Categorias';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='catalogo' element={<Catalogo />} />
           <Route path='noticias' element={<Noticias />} />
           <Route path='contato' element={<Contato />} />
+          <Route path='categorias' element={<Categorias />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
